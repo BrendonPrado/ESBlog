@@ -1,0 +1,87 @@
+
+body {
+    background-color: white;
+}
+h1 {
+    font-family: fantasy;
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 0;
+    -webkit-animation: anim 1.5s ease-out forwards 1s;
+    animation: anim 1.5s ease-out forwards 1s;
+}
+strong {
+    display: block;
+}
+
+.texto-home{
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 3ch;
+    bottom: -250%;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    transform: translateX(-4%) ;
+}
+
+
+@-webkit-keyframes anim {
+    0% {
+        text-shadow: 0 0 50px #fff;
+        letter-spacing: 80px;
+        opacity: 0;
+        -webkit-transform: rotateY(-90deg);
+    }
+    50% {
+        text-shadow: 0 0 1px #fff;
+        -webkit-transform: rotateY(0deg);
+    }
+    75% {
+        text-shadow: 0 0 1px #000000;
+        -webkit-transform: rotateY(0deg) translateZ(60px) translateY(50%);
+    }
+    100% {
+        letter-spacing: 80px;
+        -webkit-transform: rotateY(0deg) translateZ(100px) translateY(50%);
+    }
+
+}
+@keyframes anim {
+    0% {
+        text-shadow: 0 0 50px rgb(26, 90, 133);
+        letter-spacing: 80px;
+        opacity: 0;
+        -moz-transform: rotateY(-90deg);
+    }
+    50% {
+        text-shadow: 0 0 1px #fff;
+        opacity: 0.8;
+        -moz-transform: rotateY(0deg);
+    }
+    75% {
+        text-shadow: 0 0 1px #fff;
+        opacity: 0.8;
+        -moz-transform: rotateY(0deg) translateZ(60px) translateY(40%);
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: 80px;
+        -moz-transform: rotateY(0deg) translateZ(100px) translateY(100%);
+    }
+
+}
